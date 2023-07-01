@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SQLLearning</string>
+    <string-array name="category">
+        <item>Mua sam</item>
+        <item>tien an</item>
+        <item>tien nha</item>
+        <item>xang xe</item>
+        <item>con cai</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

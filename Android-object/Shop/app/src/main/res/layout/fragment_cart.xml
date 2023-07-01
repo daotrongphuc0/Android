@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mua Hàng"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginVertical="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginVertical="20dp">
+
+        <TextView
+            android:id="@+id/c_tonggia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng giá :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_buy"
+            android:text="buy"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_cart"
+            app:iconTint="@color/textColorPrimary"
+            android:textColor="@color/textColorPrimary"
+            app:backgroundTint="@color/colorAccent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</FrameLayout>
